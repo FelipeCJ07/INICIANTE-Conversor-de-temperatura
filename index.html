@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura Elegante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Conversor de Temperatura</h1>
+            <p>Converte entre Celsius, Fahrenheit e Kelvin</p>
+            <i class="fas fa-temperature-high"></i>
+        </div>
+        
+        <div class="content">
+            <div class="input-group">
+                <label for="temperature-input">Temperatura:</label>
+                <div class="input-container">
+                    <input type="number" id="temperature-input" placeholder="Digite a temperatura..." autocomplete="off">
+                    <div class="unit-selector" id="source-unit">°C</div>
+                </div>
+            </div>
+            
+            <div class="conversion-buttons">
+                <div class="conversion-btn active" data-target="celsius">
+                    <i class="fas fa-temperature-low"></i>
+                    <span>Para Celsius</span>
+                </div>
+                <div class="conversion-btn" data-target="fahrenheit">
+                    <i class="fas fa-temperature-high"></i>
+                    <span>Para Fahrenheit</span>
+                </div>
+                <div class="conversion-btn" data-target="kelvin">
+                    <i class="fas fa-thermometer"></i>
+                    <span>Para Kelvin</span>
+                </div>
+            </div>
+            
+            <div class="result-container">
+                <h3>Resultado:</h3>
+                <div class="result-value" id="result-value">0.00</div>
+                <div class="result-unit" id="result-unit">°C</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Conversor de Temperatura &copy; 2023 - Projeto Elegante e Funcional
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
